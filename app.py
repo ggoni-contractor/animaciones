@@ -9,8 +9,8 @@ df = pd.read_excel('data.xlsx')
 
 fig = px.bar(df, 
     text='dato',
-    y = 'dato', 
-    x = 'opcion',
+    x = 'dato', 
+    y = 'opcion',
     color='opcion',
     animation_frame= 'hora',
     range_y=[0,np.max(df.dato)])
