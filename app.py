@@ -13,7 +13,7 @@ fig = px.bar(df,
     y = 'opcion',
     color='opcion',
     animation_frame= 'hora',
-    range_x=[0,np.max(df.dato)])
+    range_x=[0,1.05*np.max(df.dato)])
 
 fig.update_traces(textfont_size=40, 
             textangle=0, 
